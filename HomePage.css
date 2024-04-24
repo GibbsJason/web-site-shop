@@ -1,0 +1,102 @@
+
+/* Add this CSS to your stylesheet or in a <style> tag in your component */
+body {
+  font-family: var(--chakra-fonts-body);
+  color: var(--chakra-colors-chakra-body-text);
+  background: var(--chakra-colors-chakra-body-bg);
+  transition-property: background-color;
+  transition-duration: var(--chakra-transition-duration-normal);
+  line-height: var(--chakra-lineHeights-base);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 1400px;
+  flex-grow: 1; /* Allow content to grow and fill the available space */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 120px;
+  background-color: #000;
+  height: 100vh; /* Make the content area full height */
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333; /* Dark background color for the sidebar */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Make the sidebar full height */
+}
+
+.sidebar .logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar .logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Full width for the menu items */
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar ul li.active {
+  font-weight: bold;
+}
+
+textarea {
+background-color: #f2f2f2;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  background-color: #f2f2f2;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: black;
+}
+
+/* Additional styles for your logo */
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+
